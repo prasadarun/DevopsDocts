@@ -16,11 +16,11 @@
   # To do this step 1 follow the steps
  a. Click on "Services" present on top corner of Dashboard
  b.Scroll down and search for the Networking & Content Delivery categoery
- c.Then find the VPC option and click on it
+ c.Then find the "VPC" option and click on it
  d.The page will redirect to VPC page here in the left menu click on "Your VPCs" in left side menu
- e.Then click on Create VPC button 
+ e.Then click on Create "VPC" button 
  f.Give the NAME Tag: Devoops
- g.IPv4 CIDR block : 10.1.0.0/16 and click on create button
+ g.IPv4 CIDR block : 10.1.0.0/16 and click on "create" button
  h.Then the page will referesh and you can find the Devoops VPC tag name.Click only the Devoops vpc then you find blue colour check box 
  i. Go to the Action> edit DNS Hiostbnames> Tick the check box on enable option and press save button
  ```
@@ -31,9 +31,9 @@
  a. Click on "routing table" present on left side of Dashboard
  b.Then click on "create route table" button
  c.Then give the name tag:RT-dev
- d.Then give the vpc: here please select the latest vpc creted i.e Devoops
- e.Then click on create button
- f.Then we should make created route table as the main one so to make this select the latest created route table
+ d.Then give the vpc: here please select the latest vpc created i.e Devoops
+ e.Then click on "create" button
+ f.Then we should make created route table as the main routing so to make this select the latest created route table
  g.Then click on Actions > set Main Route Table 
  ```
  
@@ -43,8 +43,8 @@
     a.Click on "subnets" present on left side of Dashboard
     b.Click on the "create subnets" button
     c.Give the name tag: Sub-Dev
-    d.Select the vpc option with Devoops
-    e.Then select the availability zone shown in the dropdown options
+    d.Select the "VPC" option with Devoops
+    e.Then select the availability zone shown in the dropdown options(AS per Requirement)
     f.IPv4 CIDR bloc: 10.1.1.0/24  
     g.Then click on the create option 
     h.To make Auto assign ip select the created subnet and click on Action > Modify auto Assign-ip 
@@ -55,10 +55,10 @@
     a.Click on "Internet Gate way" present on left side of Dashboard  
     b.Click on the "create Internet Gate Way" button
     c.Give the name tag: IGW-Dev
-    d.Click on the create button
-    e.After creation of internet gate way then you need to change from deattach mode to attach mode to do this
+    d.Click on the "create" button
+    e.After creation of internet gate way then you need to change from dattach mode to attach mode to do this
     f.select the created gate way and go to Actions > Attach to vpc > select the Devoops VPC > Attach buttton
-    h.Then go to Routing Table Dash board and in the bottom of page you will find subnet option and click on this subnet
+    h.Then go to Routing Table dash board and in the bottom of page you will find subnet option and click on this subnet
     i.Then add the created subnet and click on save option
     j.Then go to Routing Table Dash board and in the bottom of page you will find routes option and click on this routes
     k.Then click on edit routes and give 0.0.0.0 and select target with internet gateway and click on save routes
@@ -70,9 +70,9 @@
     b.Click on the "Security Group" button
     c.Give Security name: SG-Dev
     d.Give Description: SG-Dev
-    e.Select VPC: Devoops and click on "Create" button
-    Note: Here in security group dashboard at bottom of page we need to edit the inbound option.Then only we can able to coonect to     server
-    To make the chaneges click on inbound option and click on edit button
+    e.Select VPC: Devoops from dropdown and click on "Create" button
+    Note: Here in security group dashboard at bottom of page, we need to edit the inbound option.Then only we can able to coonect to     server
+    To make the changes click on inbound option and click on edit button
     select Type: Custom-tcp
     select protocol: TCP
     select Port range: 22 
